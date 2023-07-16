@@ -48,13 +48,45 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
+
 }
 
 .header-logo-color {
   color: #2e2f42;
 }
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /*================= Components======================= */
 /* =================Header=========================== */
+.header {
+  border-bottom: 1px solid #E7E9FC;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  }
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
 .header-nav-link {
   font-size: 16px;
   font-weight: 500;
@@ -81,6 +113,10 @@ body {
 .hero {
   background: #2e2f42;
 }
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
 .hero-title {
   color: #fff;
   text-align: center;
@@ -88,6 +124,10 @@ body {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .hero-modal-btn {
   color: #fff;
@@ -96,7 +136,16 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  background: none#4D5AE5;
+  background:#4D5AE5;
+}
+.hero-modal-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
@@ -104,21 +153,39 @@ body {
 }
 /* ==========================Hero==================== */
 /*====================company philosophy ===========*/
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.features-list-item {
+  width: calc((100%-72px)/4);
+}
 .features-list-title {
   color: var(--secondary-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 .features-list-description {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 /*====================company philosophy ===========*/
 /* ===================Areas of work =================*/
+.projects {
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
 .projects-title {
+  margin-bottom: 72px;
   color: var(--secondary-color);
   text-align: center;
   font-size: 36px;
@@ -127,10 +194,18 @@ body {
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
+.projects-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+  width: calc((100%-48px)/3);
+}
 /* ===================Areas of work =================*/
 /* ===================Team===========================*/
 .team {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   color: var(--secondary-color);
@@ -140,11 +215,28 @@ body {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
-  background: #fff;
+  background-color: #fff;
+  width: calc((100%-72px)/4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.card-team-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .team-list-title {
+  margin-bottom: 8px;
+  text-align: center;
   color: var(--secondary-color);
   font-size: 20px;
   font-weight: 500;
@@ -152,6 +244,7 @@ body {
   letter-spacing: 0.4px;
 }
 .team-list-profession {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
@@ -191,7 +284,14 @@ letter-spacing: 0.32px;
 
 /* =====================Clients========================= */
 /* ===================Footer========================== */
+.footer {
+  background: var(--secondary-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   color: #4d5ae5;
   font-size: 18px;
   font-family: var(--secondary-font);
@@ -203,10 +303,8 @@ letter-spacing: 0.32px;
 .footer-logo-color {
   color: #f4f4fd;
 }
-.footer {
-  background: var(--secondary-color);
-}
 .footer-description {
+  max-width: 264px;
   color: #f4f4fd;
   font-size: 16px;
   font-family: Roboto;
